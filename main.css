@@ -1,0 +1,174 @@
+@import url(./css/css-reset.css);
+@import url(./css/custom-properties.css);
+
+body, body a, body li{
+    font-family: var(--f-jakarta);
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+.icon-margin{
+    margin-right: 4px;
+}
+
+
+/*------ Header ------*/
+.topbar{
+    background-color: var(--gre-pri);
+}
+
+.topbar_container{
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    height: 2rem;
+}
+
+.topbar_left, .topbar_right{
+    font-size: var(--f-sm);
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.logo{
+    font-size: var(--f-3xl);
+    font-weight: var(--fw-700);
+    font-style: italic;
+}
+
+.logo span{
+    color: var(--gre-pri);
+}
+
+.nav_middle{
+    align-items: center;
+    justify-content: space-between;
+    height: 4.5rem;
+}
+
+.menu-top ul{
+    gap: 1.5rem;
+    align-items: center; 
+}
+
+.menu-top ul li:last-child{
+    border: 1px solid var(--gre-pri);
+    padding: 3px 8px;
+    border-radius: 15px;
+}
+
+.main-menu{
+   background-color: var(--bla-pri);
+   color: var(--whi-pri);
+}
+
+.main-menu .flex{
+    height: 2.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-menu ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-menu ul li, .search{
+    font-size: var(--f-sm);
+    line-height: 2.5rem;
+    padding: 0 1rem;
+}
+
+.main-menu ul li:hover, .search:hover{
+    background-color: var(--gre-pri);
+    height: 100%;
+}
+
+/* ------ Main Section -------- */
+/* ------ Domain Search ------- */
+.domain{
+    text-align: center;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.domain_title{
+    font-size: var(--f-2xl);
+    text-transform: uppercase;
+}
+
+.domain_search{
+    justify-content: center;
+    height: 2rem;
+    margin: 2rem 0;
+}
+
+.domain_select{
+    height: 2rem;
+    width: 4rem;
+    background-color: var(--whi-sec);
+    cursor: pointer;
+    border: 1px solid var(--border);
+}
+
+.domain_input{
+    width: 50%;
+    padding: 0 .3rem;
+    border: 1px solid var(--border);
+    border-radius: .2rem 0 0 .2rem;
+}
+
+.domain_input::placeholder{
+    font-size: var(--f-sm);
+}
+
+.domain_search button{
+    text-transform: uppercase;
+    font-size: var(--f-sm);
+    border: 1px solid var(--border);
+    border-radius: 0 .2rem .2rem 0;
+    background-color: var(--gre-pri);
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.domain_search button:hover{
+    background-color: var(--gre-sec);
+    transition: .3s;
+}
+
+.domain_popular{
+    background-color: var(--bla-lig);
+    justify-content: space-around;
+    margin-inline: auto;
+    gap: 1.1rem;
+    width: 100%;
+}
+
+.domain_popular div{
+    padding: .1rem .3rem;
+}
+
+.domain_popular h2{
+    font-size: var(--f-md); 
+    display: inline-block;   
+}
+
+.domain_popular h2 span{
+    font-size: var(--f-xxs);
+    margin-left: .1rem;  
+}
+
+.domain_popular p{
+    font-size: var(--f-xs); 
+}
+
+.domain_search-btn{
+    margin-top: 2rem;
+}
+
