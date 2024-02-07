@@ -90,7 +90,7 @@ body, body a, body li{
 /* ------ Domain Search ------- */
 .domain{
     text-align: center;
-    height: 30vh;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -148,6 +148,7 @@ body, body a, body li{
     margin-inline: auto;
     gap: 1.1rem;
     width: 100%;
+    padding: .3rem;
 }
 
 .domain_popular div{
@@ -172,3 +173,168 @@ body, body a, body li{
     margin-top: 2rem;
 }
 
+/* ------ Popular Package ------- */
+.packages{
+    background-color: var(--gra-pri);
+    padding: 4rem 0;
+}
+
+.packages_title {
+    text-transform: u;
+}
+
+.packages_lists{
+    gap: 1rem;
+    justify-content: center;
+}
+
+.packages_list{
+    width: 30%;
+    margin-top: 1.5rem;
+    text-align: center;
+    background-color: white;
+    box-shadow: var(--box-shadow-1);
+}
+
+.packages_header{
+    padding: 1rem;
+    color: white;
+    background-blend-mode: overlay;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.standard .packages_header{
+    background-image: url(./images/bg-img.jpg), linear-gradient(to right, hsla(93, 55%, 39%, 0.8) , hsla(93, 55%, 39%, 0.8));
+}
+
+.classic .packages_header{
+    background-image: url(./images/bg-img.jpg), linear-gradient(to right, hsla(214, 71%, 47%, 0.80) , hsla(214, 71%, 47%, 0.80));
+}
+
+.premium .packages_header{
+    background-image: url(./images/bg-img.jpg), linear-gradient(to right, hsla(206, 47%, 10%, 0.80), hsla(206, 47%, 10%, 0.80));
+}
+
+.packages_header h2{
+    font-size: var(--f-xl);
+}
+
+.packages_header p{
+    font-size: var(--f-xs);
+}
+
+.packages_body{
+    padding: 1rem;
+}
+
+.packages_body ul{
+    margin: 0;
+    padding: 0;
+}
+
+.packages_body ul li{
+    font-size: var(--f-sm);
+    line-height: 1.8;
+}
+
+.packages_price{
+    background-color: var(--gra-pri);
+    padding: 1rem;
+}
+
+.packages_price-std h2{
+    color: var(--gre-pri);
+}
+
+.packages_price-cls h2{
+    color: hsl(214, 71%, 47%);
+}
+
+.packages_price-pre h2{
+    color: hsl(9, 82%, 53%);
+}
+
+.packages_money-sign{
+    font-size: var(--f-sm);
+    vertical-align: super;
+}
+
+.packages_month{
+    color: var(--bla-pri);
+    font-size: var(--f-xs);
+}
+
+.packages_btn{
+    margin: 1rem 0;
+}
+
+/* ------ Our Services ------- */
+.services{
+    padding: 4rem 0;
+}
+
+.services_title{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.services_main{
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.services_service{
+    background-color: var(--gra-pri);
+    padding: 2rem 2rem 1rem;
+    text-align: center;
+}
+
+.services_icon{
+    font-size: var(--f-3xl);
+    background-color: white;
+    padding: 1.3rem 2rem;
+    border-radius: 50%;
+    width: fit-content;
+    margin-inline: auto;
+}
+
+.services_service h2{
+    font-size: var(--f-xl);
+    margin: 1rem 0 .5rem;
+}
+
+.services_service p{
+    font-size: var(--f-sm);
+    line-height: 1.7;
+}
+
+.services_btn{
+    margin: 1rem 0;
+}
+
+.services_control{
+    justify-content: center;
+    font-size: var(--f-xs);
+    gap: .4rem;
+}
+
+.services_control .fa-circle:first-child{
+    color: var(--gre-pri);
+}
+
+/* ------ CTA ------- */
+.cta img{
+    width: 100%;
+    height: 40vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(2px);
+    position: relative;
+}
+
+.cta .container{
+    position: absolute;
+}

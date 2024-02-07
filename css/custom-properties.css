@@ -15,7 +15,7 @@
     --bla-sec: hsl(0, 0%, 0%);
     --bla-lig: hsl(0, 0%, 91%);
     /* gray Primary */
-    --gra-pri: hsl(220, 9%, 46%);
+    --gra-pri: hsl(0, 0%, 96%);
 
     /* box Shadow */
     --box-shadow-1: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -161,6 +161,10 @@
     transition: .2s;
     color: white;
     box-shadow: var(--box-shadow-1);
+}
+
+.txt-center{
+    text-align: center;
 }
 
 /* ----------------------- */
