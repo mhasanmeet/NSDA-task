@@ -7,6 +7,7 @@
     /* White Primary */
     --whi-pri: hsl(0, 0%, 100%);
     --whi-sec: hsl(0, 0%, 92%);
+    --whi-lit: hsla(0, 0%, 92%, 0.50);
     /* Green Primary*/
     --gre-pri: hsl(91, 66%, 54%);
     --gre-sec: hsl(91, 98%, 38%);
@@ -16,6 +17,8 @@
     --bla-lig: hsl(0, 0%, 91%);
     /* gray Primary */
     --gra-pri: hsl(0, 0%, 96%);
+    --gra-sec: hsl(0, 0%, 25%);
+    --gra-lit: hsla(0, 0%, 25%, 0.50);
 
     /* box Shadow */
     --box-shadow-1: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -138,12 +141,13 @@
 
 .btn-md{
     /* width: fit-content; */
-    width: 9rem;
-    height: 2.5rem;
-    border: 1px solid var(--bla-sec);
+    padding: .3rem 2.5rem;
+    border: .1px solid var(--gre-sec);
     border-radius: 4rem;
     font-size: var(--f-md);
     cursor: pointer;
+    background-color: white;
+    transition: .2s;
 }
 
 .btn-sm{
@@ -156,7 +160,7 @@
     transition: .2s;
 }
 
-.btn-sm:hover{
+.btn-sm:hover, .btn-md:hover{
     background-color: var(--gre-sec);
     transition: .2s;
     color: white;
